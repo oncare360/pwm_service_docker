@@ -3,6 +3,6 @@ RUN mkdir /root/release_dll
 COPY release_dll/  /root/release_dll
 
 WORKDIR /root/
-ENV ASPNETCORE_URLS="http://*:80" 
-EXPOSE 80
+ENV ASPNETCORE_URLS="http://*:8080" 
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "/root/release_dll/PWMServices.dll"]
